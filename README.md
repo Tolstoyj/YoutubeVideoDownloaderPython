@@ -12,17 +12,26 @@ A modern, cross-platform video downloader application with a beautiful Material 
 - Download history with quick actions
 - Cross-platform support (Windows, macOS, Linux)
 
-## Requirements
+## Download Pre-built Binaries
+
+You can download the latest pre-built binaries from the [Releases](https://github.com/Tolstoyj/YoutubeVideoDownloaderPython/releases) page:
+
+- **Windows**: Download `VideoDownloader-Windows.zip`, extract, and run `VideoDownloader.exe`
+- **macOS**: Download `VideoDownloader-macOS.dmg`, mount the image, and drag the app to Applications
+
+## Build from Source
+
+### Requirements
 
 - Python 3.9 or higher
 - FFmpeg (required for some video formats)
 
-## Installation
+### Installation
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/Tolstoyj/YoutubeVideoDownloaderPython.git
-cd video-downloader
+cd YoutubeVideoDownloaderPython
 ```
 
 2. Create a virtual environment (recommended):
@@ -41,12 +50,26 @@ pip install -r requirements.txt
 - **macOS**: `brew install ffmpeg`
 - **Linux**: `sudo apt install ffmpeg` (Ubuntu/Debian) or `sudo dnf install ffmpeg` (Fedora)
 
-## Usage
+### Running from Source
 
-Run the application:
+Run the application directly:
 ```bash
 python video_downloader_gui.py
 ```
+
+### Building Executables
+
+To build standalone executables:
+
+```bash
+python build.py
+```
+
+This will create:
+- On Windows: `release/VideoDownloader-Windows.zip`
+- On macOS: `release/VideoDownloader-macOS.dmg`
+
+## Usage
 
 1. Enter a video URL in the input field
 2. Click "Fetch Info" to load video information
