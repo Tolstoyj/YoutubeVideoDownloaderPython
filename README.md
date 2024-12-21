@@ -21,7 +21,7 @@ A modern, cross-platform video downloader application with a beautiful Material 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/video-downloader.git
+git clone https://github.com/Tolstoyj/YoutubeVideoDownloaderPython.git
 cd video-downloader
 ```
 
